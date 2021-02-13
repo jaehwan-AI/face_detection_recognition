@@ -1,0 +1,6 @@
+{
+    "gender": ["man", "woman"],
+    "gaze": ["down", "left", "middle", "right", "up"],
+    "emotion": ["angry", "happy", "neutral", "sad", "surprise"],
+    "multimodal": ["no", "yes"]
+}
