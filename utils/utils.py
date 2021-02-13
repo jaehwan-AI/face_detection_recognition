@@ -41,7 +41,6 @@ def def_model(label, device):
     elif label == 'multimodal':
         model = efficientnet.efficientnet_b0(num_classes=2)
         model.load_state_dict(torch.load('./trained_model/multimodal_model_best.pth.tar', map_location=device)['state_dict'])
-    print('1')
     return model
 
 def predict(face, model, device):
