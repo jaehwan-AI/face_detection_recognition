@@ -16,8 +16,6 @@
 
 * argparse
     > pip install argparse
-* Keras
-    > pip install keras
 * opencv-python
     > pip install opencv-python
 * opencv-contrib-python
@@ -26,10 +24,12 @@
     > pip install numpy
 * facenet-pytorch
     > pip install facenet-pytorch
+* Pytorch
+    > go to install pytorch(_version check!!)
 
 ## Quick Start
 
-* Clone this repository: $ git clone https://github.com/jaehwan-AI/face_detect
+* Clone this repository: $ git clone https://github.com/jaehwan-AI/face_detection_recognition
 
 * Run the demo:
 
@@ -52,8 +52,7 @@ $ python detect_demo.py --src 0
 
 ### Dataset
 
-This model trained with FER2013 dataset. [here](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data)
-The data consists of 48x48 pixel grayscale images of faces. The training set consists of 28,709 examples. The public test set used for the validation consists of 3,589 examples. The dataset have pictures based on the emotion shown in the facial expression in to one of seven categories.
+We used Korean dataset that can't be disclosed for security reasons.
 
 ### Face Detection
 
@@ -61,7 +60,7 @@ We used MTCNN as a facial recognition technology to analyze emotions. MTCNN uses
 
 ### Pre-trained Model
 
-In order to inference the model, we used pre-learned weights using XCEPTION developed from Google(2017).
+In order to inference the model, we used pre-learned weights using EfficientNet(2019).
 
 
 ## Sample Outputs
@@ -76,7 +75,6 @@ sample video:
 
 sample webcam:
 
-<img src="sample/sample3.gif" width="60%">
 
 ## References
 
@@ -86,4 +84,4 @@ sample webcam:
 
 1. K. Zhang, Z. Zhang, Z. Li and Y. Qiao. _Joint Face Detection and Alignment Using Multitask Cascaded Convolutional Networks_, IEEE Signal Processing Letters, 2016. [PDF](https://arxiv.org/abs/1604.02878)
 
-1. F. Chollet. _Xception: Deep Learning with Depthwise Separable Convolutions_, 2017. [PDF](https://arxiv.org/abs/1610.02357)
+1. M. Tan, Quoc V. Le. _EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks_, 2019. [PDF](https://arxiv.org/abs/1610.02357)
