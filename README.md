@@ -35,17 +35,17 @@
 
 >**image input**
 ```bash
-$ python detect_demo.py --image data/image/image.jpg
+$ python demo.py --image data/image/image.jpg
 ```
 
 >**video input**
 ```bash
-$ python detect_demo.py --video data/video/video.mp4
+$ python demo.py --video data/video/video.mp4
 ```
 
 >**webcam**
 ```bash
-$ python detect_demo.py --src 0
+$ python demo.py --src 0
 ```
 
 ## Usage
